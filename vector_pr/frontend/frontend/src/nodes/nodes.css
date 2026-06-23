@@ -1,0 +1,121 @@
+/* nodes.css - shared styling for all pipeline nodes */
+
+.node-container {
+  min-width: 220px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+  font-family: inherit;
+  font-size: 13px;
+  color: #1e293b;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.node-container:hover {
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+  border-color: #c7d2fe;
+}
+
+.node-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  border-radius: 12px 12px 0 0;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.node-icon {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.node-title {
+  font-size: 13px;
+}
+
+.node-body {
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.node-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.node-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.node-input,
+.node-select,
+.node-textarea {
+  border: 1px solid #d8dee9;
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 13px;
+  font-family: inherit;
+  background: #f8fafc;
+  color: #1e293b;
+  outline: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+  resize: none;
+}
+
+.node-input:focus,
+.node-select:focus,
+.node-textarea:focus {
+  border-color: #818cf8;
+  background: #ffffff;
+}
+
+.node-textarea {
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  line-height: 1.4;
+}
+
+.node-static-text {
+  font-size: 12px;
+  color: #475569;
+  line-height: 1.4;
+}
+
+/* Handles */
+.node-handle {
+  width: 10px !important;
+  height: 10px !important;
+  background: #6366f1 !important;
+  border: 2px solid #ffffff !important;
+}
+
+.handle-label {
+  position: absolute;
+  font-size: 10px;
+  color: #64748b;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.handle-label-left {
+  left: 12px;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.handle-label-right {
+  right: 12px;
+  transform: translate(100%, -50%);
+  top: 50%;
+}
